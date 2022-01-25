@@ -152,8 +152,9 @@ To acquire an _attribute_, we call one of the following on our subject.
 - [`try_grant_with_resource_async`](crate::prelude::GrantableWithResource::try_grant_with_resource_async)
 - [`try_grant_with_resource_and_context`](crate::prelude::AttributeWithResourceAndContext::try_grant_with_resource_and_context)
 - [`try_grant_with_resource_and_context_async`](crate::prelude::AttributeWithResourceAndContext::try_grant_with_resource_and_context_async)
-  
-For example, if we wanted to check if our `User` was both enabled and a member of a `Team` we could do the following.
+
+#### Example
+If we wanted to check if our `User` was both enabled and a member of a `Team` we could do the following.
   We'll use the previous `UserIsEnabled` and `UserIsTeamMember` _attribute_ definitions.
 ```rust
 #[tokio::main]
